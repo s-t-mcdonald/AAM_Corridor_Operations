@@ -1,0 +1,49 @@
+title = "UAM_Config_File"
+
+
+# Scheduling Parameters
+[schedule]
+reschedule_time = 3 #Time period for which new schedules are created
+schedule_buffer = 10 #Time for which vehicles scheduled for operations cannot be rescheduled
+
+# Optimization Parameters
+[optimization]
+time_limit = 600 #Time limit for optimization model (s)
+optimality_gap = 0.001 #Optimality gap that will stop optmization (%
+prob_reg = 0 #Regularization for prob of closures
+
+# Network Parameters
+[network]
+num_vertiports = 28 #Number of vertiports considered in the networ
+num_routes = 0 #Number of routes used in the network
+num_lanes = 1 #Number of lanes used in the network
+margin = 0 #Margin
+
+# Time Parameters
+[time]
+discretization = 1 #Operational time discretization (for route flows)
+graph_discretization_mult = 1 #Operational time discretization (for route flows)
+pass_wait_time = 1 #Maximum Time Waited by any Demand Request
+tactical_disc = 10 #Operational time time discretization to solve first stage problem 
+corridor_time = 1 #Tactical time interval (for corridor directions)
+begin_time = 600 #Simulation begining time
+horizon = 30 #Scheduling time horizon
+
+[vehicle]
+num_seats = 1 # Number of seats in a vehicle
+vehicle_speed = 2682.24 # Nominal vehicle speed
+max_endurance = 1.5 # Nominal vehicle speed
+seperation_distance = 402.335 #Vehicle Seperation Distance
+
+# Vertiport Parameters
+[vertiports]
+num_veh = 10 #Number of vehicles starting out at each vertiport
+turn_around_time = 15 #Vehicle turn around time
+loading_time = 10 #Vehicle Loading Time
+parking_capacity = 1 #Parking capacity at each vertiport
+operational_capacity = 1 #Arrival and Departures per Time Period
+
+
+
+
+

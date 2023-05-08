@@ -1,0 +1,29 @@
+title = "UAM_Config_File"
+
+
+# Scheduling Parameters
+[schedule]
+none1 = 1
+
+# Optimization Parameters
+[optimization]
+none2 = 1
+
+# Network Parameters
+[network]
+none3 = 1
+
+# Time Parameters
+[time]
+none4 = 1
+
+[vehicle]
+none5 = 1
+
+# Vertiport Parameters
+[vertiports]
+none6 = 1
+
+
+
+
